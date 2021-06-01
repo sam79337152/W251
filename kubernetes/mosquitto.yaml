@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+ name: mosquitto
+spec:
+ containers:
+ - name: my-first-container2
+   image: sam7933715/mosquitto
+   ports:
+   - containerPort: 1883
+
