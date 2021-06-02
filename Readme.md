@@ -1,5 +1,5 @@
-### W251 Deep Learning in the Cloud and at the Edge
-### Homework 3
+# W251 Deep Learning in the Cloud and at the Edge
+## Homework 3
 Sam Shih
 
 ### MQTT, Qos And Overall Structure
@@ -15,7 +15,8 @@ kubectl get services```
 ```kubectl apply -f mosquitto_deployment_remote.yaml
 kubectl get deployments
 kubectl apply -f mosquittoService_remote.yaml
-kubectl get services```
+kubectl get services
+```
 
 
 
@@ -62,6 +63,8 @@ python3 image-processor.py
 ### SampleImages
 Images that were captured by the camera , cut from the frame, sent over the pipeline and saved in the bucket can be found in```saved_images.```
 The link of my face images:
+
+![image](https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png)
 https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png
 https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-667324.png
 
