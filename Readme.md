@@ -64,6 +64,6 @@ python3 image-processor.py
 ### SampleImages
 Images that were captured by the camera , cut from the frame, sent over the pipeline and saved in the bucket can be found in```saved_images.```
 The link of my face images:
-https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png
-https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-667324.png
+######https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png
+######https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-667324.png
 
