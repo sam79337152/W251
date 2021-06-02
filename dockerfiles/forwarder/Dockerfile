@@ -42,10 +42,9 @@ RUN rm -rf /tmp/*.deb
 
 RUN mkdir /app
 WORKDIR /app
-COPY image-processor.py /app
+COPY forwarder.py /app
 
 RUN export DISPLAY=:0
-#RUN xhost +
 
-CMD ["python3","image-processor.py"]
+CMD ["python3","forwarder.py"]
    

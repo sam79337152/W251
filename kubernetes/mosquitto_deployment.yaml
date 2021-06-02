@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto-deployment6
+spec:
+  selector:
+    matchLabels:
+      app: mosquitto
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: mosquitto
+    spec:
+      containers:
+      - name: facedetector
+        image: sam7933715/testdetector2
+        ports:
+        - containerPort: 1883
+      - name: forwarder
+        image: sam7933715/forwarder:part1
+        ports:
+        - containerPort: 1884  # containerPort can not be the same for a pod
+
