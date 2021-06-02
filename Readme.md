@@ -1,6 +1,7 @@
 # W251 Deep Learning in the Cloud and at the Edge
 ## Homework 3
 Sam Shih
+###### 
 
 ### MQTT, Qos And Overall Structure
 The facedetecor container pushes the topics once it recognizes a face from the camera. The forwarder container subscribes the topic from MQTT broker, receives messages from facedetector and submit it to AWS EC2``` image_processor```. In the local broker in Jetson, the topic name is named``` facedetector_topic```. In the remote server in the cloud, the topic is named```facedetector_topic_remote```. I use QoS 0 all over the MQTT pipeline. Besides, I simplify the procedure which facedetector will directly store face images in Jetson rather than relying on a standalone logger docker.
@@ -63,8 +64,6 @@ python3 image-processor.py
 ### SampleImages
 Images that were captured by the camera , cut from the frame, sent over the pipeline and saved in the bucket can be found in```saved_images.```
 The link of my face images:
-
-![image](https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png)
 https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-508316.png
 https://berkeleysambucket.s3-ap-southeast-1.amazonaws.com/faceImages/frame-1622378866-667324.png
 
